@@ -1,0 +1,64 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+  }
+  
+  /* Header Section */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    border-bottom: 2px solid #eaeaea;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .green-text {
+    color: green;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .main-nav a:hover {
+    color: green;
+  }
+  
+  /* Social Media Icons */
+  .social-icons a {
+    margin-left: 10px;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 50px;
+    text-align: center;
+  }
+  

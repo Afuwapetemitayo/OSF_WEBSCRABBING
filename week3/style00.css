@@ -1,64 +1,143 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    background-color: #f4f4f4;
-  }
-  
-  /* Header Section */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+}
+
+/* Header Section */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: white;
+  border-bottom: 2px solid #eaeaea;
+  position: relative;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.green-text {
+  color: green;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main-nav a:hover {
+  color: green;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+  .main{
+    
+
+ 
+}
+/* Hamburger Icon */
+.hamburger {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+}
+
+/* Footer Section */
+.main-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* For Tablets and Smaller Screens (max-width: 768px) */
+@media (max-width: 768px) {
   .main-header {
+    flex-direction: column;
+  }
+
+  /* Hide the navbar initially */
+  .main-nav {
+    display: none; /* Hide by default */
+  }
+
+  /* Show the hamburger icon */
+  .hamburger {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: white;
-    border-bottom: 2px solid #eaeaea;
   }
-  
-  .logo h1 {
-    font-size: 24px;
-    font-weight: bold;
+
+  /* When navbar is toggled, display as a block */
+  .main-nav.show {
+    display: block;
+    width: 100%; /* Adjust the width as needed */
   }
-  
-  .green-text {
-    color: green;
-  }
-  
+
   .main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .main-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  .main-nav a:hover {
-    color: green;
-  }
-  
-  /* Social Media Icons */
-  .social-icons a {
-    margin-left: 10px;
-  }
-  
-  .social-icons img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  /* Main Content */
-  main {
-    padding: 50px;
+    flex-direction: column;
+    gap: 10px;
     text-align: center;
   }
-  
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* For Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 18px;
+  }
+
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .main-footer {
+    padding: 8px 0;
+  }
+}

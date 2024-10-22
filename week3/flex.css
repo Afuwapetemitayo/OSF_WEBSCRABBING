@@ -13,3 +13,112 @@
     transform: scale(1.05);
 
 }
+
+
+@keyframes colorChange {
+    0% {
+        background-color: red; }
+    50% {
+        background-color: blue; }
+    100% {
+        background-color: green; t}
+}
+
+
+
+    .rbb{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    width: 
+}
+
+/* .hl-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    animation: colorChange 3s infinite, movement 2s infinite;;
+    animation-direction: reverse;
+} */
+
+.hl-button {
+    background-color: red;
+}
+
+.cm-button {
+    background-color: blue;
+}
+
+/* .cm-button {
+ 
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: rgb(132, 255, 0);
+    color: white;
+    border: none;
+    animation: colorChange 3s infinite, movement 2s infinite;
+    animation-direction: reverse;
+} */
+
+
+@keyframes movement1 {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes movement2 {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.hl-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: colorChange 3s infinite, movement1 2s infinite;
+    /* animation-direction: reverse; */
+}
+
+.cm-button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
+    animation: colorChange 3s infinite, movement2 2s infinite;
+    /* animation-direction: reverse; */
+}
+
+
+
+
+
+
+
+
+
+

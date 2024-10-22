@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes colorChange {
+            0% {
+                background-color: red;
+            }
+            50% {
+                background-color: blue;
+            }
+            100% {
+                background-color: green;
+            }
+        }
+
+        .hl-button,
+        .cm-button {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            animation: colorChange 3s infinite;
+        }
+
+        .hl-button {
+            background-color: red;
+        }
+
+        .cm-button {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button class="hl-button">HL Button</button>
+    <button class="cm-button">CM Button</button>
+</body>
+</html>
